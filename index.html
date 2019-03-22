@@ -7,13 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tomasz Jach - Porfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-    <header>
+    <!-- <header>
 
         <div class="links">
             <ul>
@@ -23,6 +25,23 @@
                 <li><a href="#four">Kontakt</a></li>
             </ul>
         </div>
+    </header> -->
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">O mnie</a></li>
+                    <li><a href="#">Umiejętności</a></li>
+                    <li><a href="#">Projekty</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <div id="landing">
         <h1>Tomasz Jach</h1>
@@ -45,7 +64,8 @@
         </div>
         <div class="img">
             <img src="img/zdjecie.png" alt="">
-            <p>Nazywam się Tomasz Jach. W styczniu 2019r. ukonczyłem Politechnike Krakowską uzyskując tytuł inżyniera.
+            <p>Nazywam się Tomasz Jach. W styczniu 2019r. ukonczyłem Politechnike Krakowską uzyskując tytuł
+                inżyniera.
             </p>
         </div>
 
@@ -179,7 +199,25 @@
     </div>
 
     </div>
+    <script type="text/javascript">
+        // Menu-toggle button
 
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        // Scrolling Effect
+
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        })
+    </script>
 </body>
 
 </html>

@@ -9,22 +9,83 @@ body {
 }
 
 /* HEADER STYLES */
-header {
+
+/* header {
   padding: 20px;
-  /* background-color: tomato; */
+   background-color: tomato;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  width: 100%;
+  flex-basis: 20%;
   position: absolute;
   z-index: 2;
 }
 
 header h2 {
   cursor: default;
+} */
+
+header {
+  width: 100%;
 }
 
-.links {
+
+
+
+nav {
+  position: fixed;
+
+  width: 100%;
+  line-height: 60px;
+  opacity: 0.6;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;
+  text-align: center
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+
+
+
+
+/* .links {
   margin-right: 20px;
 }
 
@@ -44,7 +105,7 @@ header h2 {
 .links ul li a:hover {
   border-bottom: 2px solid white;
   padding-bottom: 5px;
-}
+} */
 
 /* LANDING STYLES */
 
@@ -399,12 +460,14 @@ footer p {
   }
 
   header {
-    display: none;
+    /* display: none; */
     width: 100%;
   }
+
   #arrow-down {
     display: none;
   }
+
   #landing {
     width: 100%;
     height: 100vh;
@@ -556,9 +619,11 @@ footer p {
     height: 100vh;
     background-size: cover;
   }
+
   #arrow-down {
     display: none;
   }
+
   #landing h1 {
     font-size: 20px;
   }
@@ -598,9 +663,12 @@ footer p {
   .proj {
     margin-top: 20px;
   }
+
   .projinfo p {
     font-size: 16px;
   }
+
+  .projinfo a {}
 }
 
 @media (min-width: 410px) {
@@ -807,10 +875,12 @@ footer p {
   #abilites {
     height: 110vh;
   }
+
   #abilites .features {
     width: 91%;
     margin: 20px auto;
   }
+
   #abilites .feature {
     flex-basis: 50%;
   }
@@ -848,70 +918,92 @@ footer p {
     flex-basis: 33%;
   }
 }
+
 @media (min-width: 1200px) {
   #landing h2 {
     top: 60%;
     font-size: 40px;
   }
+
+  header {
+    display: flex;
+  }
+
   #me {
     height: 120vh;
     width: 80%;
     margin: auto;
   }
+
   #me .img p {
     font-size: 40px;
   }
+
   .social2 a i {
     font-size: 60px;
   }
+
   #abilites {
     height: 140vh;
     width: 80%;
     margin: auto;
   }
+
   #abilites .features .feature img {
     flex-basis: 51%;
   }
+
   #arrow-down {
     display: block;
   }
+
   #learning {
     height: 120vh;
     width: 80%;
     margin: auto;
   }
+
   #learning .features2 {
     width: 91%;
     margin: auto;
     flex-basis: 50%;
   }
+
   .features2 .feature {
     flex-basis: 25%;
   }
+
   #projects {
     height: 260vh;
     width: 80%;
     margin: auto;
   }
+
   .projinfo h2 {
     font-size: 35px;
   }
+
   .projinfo p {
     font-size: 25px;
   }
+
   .projinfo a {
     font-size: 30px;
+    text-decoration: none;
   }
 }
+
 @media (min-width: 1600px) {
   #me {
     width: 70%;
     margin: auto;
     height: 100vh;
   }
+
   .social2 a i {
     font-size: 80px;
   }
+
   #abilites {
     width: 70%;
     height: 120vh;
@@ -923,9 +1015,47 @@ footer p {
     margin: auto;
     height: 80vh;
   }
+
   #projects {
     width: 70%;
     margin: auto;
-    height: 250vh;
+    height: 140vh;
+  }
+}
+
+@media(max-width: 786px) {
+
+  nav ul {
+    max-height: 0px;
+    background: #000;
+    z-index: 1;
+  }
+
+  nav.black ul {
+    background: #000;
+  }
+
+  .showing {
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+
+  }
+
+  .menu-icon {
+    display: block;
+    padding: 0;
+  }
+
+  .menu-icon i {
+    padding-right: 20px;
+    padding-top: 20px;
   }
 }
