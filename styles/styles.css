@@ -197,34 +197,6 @@ p strong {
   text-align: center;
 }
 
-/* .contact form input,
-textarea {
-    padding: 10px 10px 20px 10px;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    outline: none;
-}
-
-button {
-    width: fit-content;
-    padding: 10px 20px;
-    border-radius: 40px;
-    margin: auto;
-    margin-top: 10px;
-    font-size: 14px;
-    cursor: pointer;
-    background-color: rgb(88, 180, 255);
-    border: none;
-    box-shadow: 2px 2px 5px black;
-    transition: box-shadow 150ms, background-color 150ms, color 150ms;
-}
-
-button:active {
-    box-shadow: none;
-    background-color: rgb(75, 152, 214);
-    color: rgb(44, 44, 44);
-} */
-
 /*Footer Styles */
 footer {
   display: flex;
@@ -300,11 +272,6 @@ footer p {
   flex-wrap: wrap;
 }
 
-/* .feature h2 {
-    text-align: center;
-} */
-
-/*  */
 #learning {
   display: flex;
   flex-direction: column;
@@ -435,7 +402,9 @@ footer p {
     display: none;
     width: 100%;
   }
-
+  #arrow-down {
+    display: none;
+  }
   #landing {
     width: 100%;
     height: 100vh;
@@ -875,24 +844,34 @@ footer p {
   }
 }
 @media (min-width: 1200px) {
+  #landing h2 {
+    top: 60%;
+    font-size: 40px;
+  }
   #me {
-    height: 100vh;
+    height: 120vh;
     width: 80%;
     margin: auto;
   }
   #me .img p {
     font-size: 40px;
   }
+  .social2 a i {
+    font-size: 60px;
+  }
   #abilites {
-    height: 120vh;
+    height: 140vh;
     width: 80%;
     margin: auto;
   }
   #abilites .features .feature img {
     flex-basis: 51%;
   }
+  #arrow-down {
+    display: block;
+  }
   #learning {
-    height: 80vh;
+    height: 120vh;
     width: 80%;
     margin: auto;
   }
@@ -910,10 +889,10 @@ footer p {
     margin: auto;
   }
   .projinfo h2 {
-    font-size: 45px;
+    font-size: 35px;
   }
   .projinfo p {
-    font-size: 35px;
+    font-size: 25px;
   }
   .projinfo a {
     font-size: 30px;
@@ -923,15 +902,21 @@ footer p {
   #me {
     width: 70%;
     margin: auto;
+    height: 100vh;
+  }
+  .social2 a i {
+    font-size: 80px;
   }
   #abilites {
     width: 70%;
     height: 120vh;
     margin: auto;
   }
+
   #learning {
     width: 70%;
     margin: auto;
+    height: 80vh;
   }
   #projects {
     width: 70%;
