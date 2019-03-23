@@ -38,6 +38,7 @@ nav {
   width: 100%;
   line-height: 60px;
   opacity: 0.6;
+  z-index: 2;
 }
 
 nav ul {
@@ -116,6 +117,7 @@ nav ul li a {
   background-size: cover;
   height: 100vh;
   padding: 200px 20px;
+  z-index: 1;
 }
 
 #landing h1 {
@@ -126,6 +128,7 @@ nav ul li a {
   font-family: roboto;
   color: white;
   text-transform: uppercase;
+  z-index: 0;
 }
 
 #landing h2 {
@@ -136,6 +139,7 @@ nav ul li a {
   transform: translate(-50%, -50%);
   font-size: 40px;
   font-family: roboto;
+  z-index: 0;
 }
 
 .photo {
@@ -225,7 +229,7 @@ p strong {
 
 /* Contacts section */
 
-.contact {
+#contact {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -233,7 +237,7 @@ p strong {
   background-color: LightSlateGray;
 }
 
-.contact h1 {
+#contact h1 {
   flex-basis: 100%;
   flex-wrap: wrap;
   margin-bottom: auto;
@@ -242,10 +246,10 @@ p strong {
   text-align: center;
 }
 
-.contact form {
+/* #contact form {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .contact-data {
   margin-top: 100px;
@@ -593,13 +597,13 @@ footer p {
     border-bottom: 2px solid black;
   }
 
-  .contact {
+  #contact {
     padding: 0;
     width: 100%;
     background-color: LightSlateGray;
   }
 
-  .contact h1 {
+  #contact h1 {
     flex-basis: 100%;
     flex-wrap: wrap;
     margin-bottom: auto;
@@ -608,7 +612,7 @@ footer p {
     text-align: center;
   }
 
-  .contact p {
+  #contact p {
     font-size: 20px;
   }
 }
