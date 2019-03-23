@@ -29,9 +29,6 @@ header {
   width: 100%;
 }
 
-
-
-
 nav {
   position: fixed;
 
@@ -61,7 +58,7 @@ nav.black ul {
 nav ul li {
   display: inline-block;
   padding: 16px 40px;
-  text-align: center
+  text-align: center;
 }
 
 nav ul li a {
@@ -81,10 +78,6 @@ nav ul li a {
   color: #fff;
   display: none;
 }
-
-
-
-
 
 /* .links {
   margin-right: 20px;
@@ -671,8 +664,6 @@ footer p {
   .projinfo p {
     font-size: 16px;
   }
-
-  .projinfo a {}
 }
 
 @media (min-width: 410px) {
@@ -756,7 +747,42 @@ footer p {
     height: 250vh;
   }
 }
-
+@media only screen and (min-width: 568px) and (orientation: landscape) {
+  #landing h1 {
+    font-size: 16px;
+  }
+  #landing h2 {
+    font-size: 12px;
+  }
+  #me {
+    height: 200vh;
+  }
+  #abilites {
+    height: 600vh;
+  }
+  #abilites .feature {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+  #abilites .feature img {
+    flex-basis: 50%;
+  }
+  #abilites .feature h2 {
+    flex-basis: 51%;
+  }
+  #learning {
+    height: 400vh;
+  }
+  #learning .features2 .feature img {
+    flex-basis: 50%;
+  }
+  #learning .features2 .feature h2 {
+    flex-basis: 51%;
+  }
+  #projects {
+    height: 550vh;
+  }
+}
 @media (min-width: 600px) {
   #landing h1 {
     font-size: 40px;
@@ -807,7 +833,62 @@ footer p {
     font-size: 30px;
   }
 }
-
+@media only screen and (min-width: 640px) and (orientation: landscape) {
+  #landing h1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+  #landing h2 {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+  }
+  #me {
+    flex-direction: column;
+    padding: 0;
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+  }
+  #me h1 {
+    font-size: 20px;
+  }
+  .img img {
+    width: 20%;
+    height: 100%;
+    margin-top: 30px;
+  }
+  .img p {
+    font-size: 16px;
+  }
+  .social2 a {
+    font-size: 15px;
+  }
+  #abilites {
+    height: 180vh;
+  }
+  #abilites h1 {
+    font-size: 20px;
+  }
+  #abilites .features .feature {
+    flex-basis: 50%;
+  }
+  #abilites .features .feature h2 {
+    font-size: 16px;
+  }
+  #learning {
+    height: 200vh;
+  }
+  #learning .features2 .feature {
+    flex-basis: 33%;
+  }
+  #projects {
+    height: 400vh;
+  }
+}
 @media (min-width: 768px) {
   #landing h1 {
     font-size: 45px;
@@ -926,7 +1007,7 @@ footer p {
 @media (min-width: 1200px) {
   #landing h2 {
     top: 60%;
-    font-size: 40px;
+    font-size: 20px;
   }
 
   header {
@@ -934,29 +1015,39 @@ footer p {
   }
 
   #me {
-    height: 120vh;
-    width: 80%;
+    height: 100vh;
+    width: 70%;
     margin: auto;
   }
 
   #me .img p {
+    font-size: 20px;
+  }
+  #me .img img {
+    height: 25vh;
+    width: 12%;
+  }
+  .social2 a i {
     font-size: 40px;
   }
 
-  .social2 a i {
-    font-size: 60px;
-  }
-
   #abilites {
-    height: 140vh;
+    height: 110vh;
     width: 80%;
     margin: auto;
   }
-
-  #abilites .features .feature img {
-    flex-basis: 51%;
+  #abilites h1 {
+    font-size: 30px;
   }
-
+  #abilites .features .feature {
+    flex-basis: 33%;
+  }
+  #abilites .features .feature img {
+    flex-basis: 33%;
+  }
+  #abilites .features .feature h2 {
+    flex-basis: 33%;
+  }
   #arrow-down {
     display: block;
   }
@@ -965,6 +1056,7 @@ footer p {
     height: 120vh;
     width: 80%;
     margin: auto;
+    padding-top: 0;
   }
 
   #learning .features2 {
@@ -1001,7 +1093,7 @@ footer p {
   #me {
     width: 70%;
     margin: auto;
-    height: 100vh;
+    height: 70vh;
   }
 
   .social2 a i {
@@ -1010,14 +1102,18 @@ footer p {
 
   #abilites {
     width: 70%;
-    height: 120vh;
+    height: 80vh;
     margin: auto;
+  }
+  #abilites .features {
+    width: 91%;
+    flex-basis: 100%;
   }
 
   #learning {
     width: 70%;
     margin: auto;
-    height: 80vh;
+    height: 70vh;
   }
 
   #projects {
@@ -1026,9 +1122,7 @@ footer p {
     height: 140vh;
   }
 }
-
-@media(max-width: 786px) {
-
+@media (max-width: 786px) {
   nav ul {
     max-height: 0px;
     background: #000;
@@ -1040,17 +1134,15 @@ footer p {
   }
 
   .showing {
-    max-height: 100vh;
+    max-height: 80vh;
     margin: 0;
     padding: 0;
-
   }
 
   nav ul li {
     box-sizing: border-box;
     width: 100%;
-    padding: 24px;
-
+    padding: 7px;
   }
 
   .menu-icon {

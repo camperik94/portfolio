@@ -35,9 +35,9 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="#landing">O mnie</a></li>
+                    <li><a href="#me">O mnie</a></li>
                     <li><a href="#abilites">Umiejętności</a></li>
-                    <li><a href="#learning">Projekty</a></li>
+                    <li><a href="#projects">Projekty</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
@@ -49,7 +49,7 @@
     </div>
 
     </div>
-    <a href="#abilites">
+    <a href="#me">
         <!-- <button class="btnarr">
             <i class="fas fa-angle-down"></i>
         </button> -->
@@ -217,6 +217,16 @@
                 $('nav').removeClass('black');
             }
         })
+
+        $(document).ready(function() {
+    $('a[href^="#"]').click(function() {
+        var hash = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1500);
+        return false;
+    });
+});
     </script>
 </body>
 
