@@ -6,6 +6,7 @@
 
 body {
   font-family: Montserrat;
+  min-width: 320px;
 }
 
 /* HEADER STYLES */
@@ -277,7 +278,7 @@ footer p {
 
 #abilites h2 {
   /* margin-bottom: 30px; */
-  padding: 5px 110px;
+  padding: 5px 100px;
   /* border-bottom: 2px solid black; */
 }
 
@@ -461,6 +462,10 @@ footer p {
     width: 100%;
   }
 
+  nav {
+    min-width: 320px;
+  }
+
   #arrow-down {
     display: none;
   }
@@ -488,7 +493,9 @@ footer p {
   #me {
     flex-direction: column;
     padding: 0;
+
     height: 100vh;
+    height: 568px;
     width: 100%;
   }
 
@@ -520,6 +527,7 @@ footer p {
     flex-direction: column;
     padding: 0;
     width: 100%;
+
     height: 200vh;
   }
 
@@ -538,6 +546,7 @@ footer p {
 
   .feature h2 {
     text-align: center;
+    max-width: 320px;
   }
 
   .features2 {
@@ -558,6 +567,7 @@ footer p {
   #learning {
     flex-direction: column;
     width: 100%;
+    height: 568px;
     height: 150vh;
     padding-left: 0;
     padding-right: 0;
@@ -578,6 +588,7 @@ footer p {
   #projects {
     padding: 0;
     width: 100%;
+    height: 568px;
     height: 360vh;
     margin-top: 50px;
   }
@@ -592,6 +603,7 @@ footer p {
 
   #contact {
     padding: 0;
+    height: 568px;
     width: 100%;
     background-color: LightSlateGray;
   }
@@ -611,6 +623,10 @@ footer p {
 }
 
 @media (min-width: 360px) {
+  nav {
+    width: 100%;
+  }
+
   #landing {
     width: 100%;
     height: 100vh;
@@ -623,6 +639,10 @@ footer p {
 
   #landing h1 {
     font-size: 20px;
+  }
+
+  #abilites {
+    height: 190vh
   }
 
   .features2 {
@@ -641,12 +661,13 @@ footer p {
 
   #learning {
     padding-top: 110px;
+    height: 140vh;
   }
 
   #projects {
     margin-top: 20px;
     padding: 0;
-    height: 270vh;
+    height: 280vh;
   }
 
   #projects h1 {
@@ -665,6 +686,8 @@ footer p {
     font-size: 16px;
   }
 }
+
+
 
 @media (min-width: 410px) {
   #landing {
@@ -701,6 +724,7 @@ footer p {
 
   #abilites {
     padding-top: 50px;
+    height: 200vh;
   }
 
   .features2 .feature h2 {
@@ -709,12 +733,13 @@ footer p {
 
   #learning {
     padding-top: 50px;
+    height: 140vh;
   }
 
   #projects {
     margin-top: 0;
     padding: 0;
-    height: 280vh;
+    height: 260vh;
   }
 
   #projects h1 {
@@ -747,42 +772,58 @@ footer p {
     height: 250vh;
   }
 }
+
 @media only screen and (min-width: 568px) and (orientation: landscape) {
   #landing h1 {
     font-size: 16px;
   }
+
   #landing h2 {
     font-size: 12px;
   }
+
   #me {
     height: 200vh;
   }
+
+  #me h1 {
+    text-align: center;
+  }
+
   #abilites {
     height: 600vh;
   }
+
   #abilites .feature {
     flex-basis: 100%;
     flex-wrap: wrap;
   }
+
   #abilites .feature img {
     flex-basis: 50%;
   }
+
   #abilites .feature h2 {
     flex-basis: 51%;
   }
+
   #learning {
     height: 400vh;
   }
+
   #learning .features2 .feature img {
     flex-basis: 50%;
   }
+
   #learning .features2 .feature h2 {
     flex-basis: 51%;
   }
+
   #projects {
     height: 550vh;
   }
 }
+
 @media (min-width: 600px) {
   #landing h1 {
     font-size: 40px;
@@ -790,6 +831,10 @@ footer p {
 
   #landing h2 {
     font-size: 35px;
+  }
+
+  #me {
+    height: 80vh;
   }
 
   #me .tittle {
@@ -821,6 +866,10 @@ footer p {
     font-size: 30px;
   }
 
+  #learning {
+    height: 150vh;
+  }
+
   #learning .feature img {
     flex-basis: 55%;
   }
@@ -833,6 +882,7 @@ footer p {
     font-size: 30px;
   }
 }
+
 @media only screen and (min-width: 640px) and (orientation: landscape) {
   #landing h1 {
     top: 50%;
@@ -840,55 +890,99 @@ footer p {
     transform: translate(-50%, -50%);
     font-size: 20px;
   }
+
   #landing h2 {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 15px;
   }
+
   #me {
     flex-direction: column;
     padding: 0;
-    height: 100vh;
-    width: 80%;
+    height: 130vh;
+    width: 90%;
     margin: auto;
   }
+
   #me h1 {
-    font-size: 20px;
+    font-size: 40px;
   }
+
   .img img {
-    width: 20%;
-    height: 100%;
+    height: 150px;
     margin-top: 30px;
   }
+
   .img p {
     font-size: 16px;
   }
+
   .social2 a {
     font-size: 15px;
   }
+
   #abilites {
     height: 180vh;
+    width: 90%;
+    margin: auto;
   }
+
   #abilites h1 {
     font-size: 20px;
   }
+
   #abilites .features .feature {
     flex-basis: 50%;
   }
-  #abilites .features .feature h2 {
-    font-size: 16px;
+
+  #abilites .features .feature img {
+    flex-basis: 40%;
   }
+
+  #abilites .features .feature h2 {
+    flex-basis: 30%;
+    font-size: 14px;
+  }
+
   #learning {
     height: 200vh;
+    width: 90%;
+    margin: auto;
   }
+
+  #learning .features2 {
+    flex-basis: 100%;
+  }
+
   #learning .features2 .feature {
-    flex-basis: 33%;
+    flex-basis: 10%;
   }
+
+  #learning .features2 .feature img {
+    flex-basis: 23%;
+  }
+
+  #learning .features2 .feature h2 {
+
+    font-size: 15px;
+  }
+
   #projects {
-    height: 400vh;
+
+    height: 480vh;
+    width: 90%;
+    margin: auto;
   }
 }
+
+@media only screen and (min-width: 640px) and (orientation: landscape) {
+  #projects {
+    height: 350vh;
+  }
+}
+
 @media (min-width: 768px) {
   #landing h1 {
     font-size: 45px;
@@ -899,7 +993,7 @@ footer p {
   }
 
   #abilites {
-    height: 270vh;
+    height: 300vh;
   }
 
   #abilites h1 {
@@ -912,15 +1006,19 @@ footer p {
   }
 
   #abilites .feature img {
-    flex-basis: 51%;
+    flex-basis: 59%;
   }
 
   #abilites .feature h2 {
-    flex-basis: 51%;
+    flex-basis: 55%;
   }
 
   #me .social2 a {
     font-size: 36px;
+  }
+
+  #learning {
+    height: 180vh;
   }
 
   #learning h1 {
@@ -928,7 +1026,7 @@ footer p {
   }
 
   #learning .feature img {
-    flex-basis: 51%;
+    flex-basis: 59%;
   }
 
   #learning .feature h2 {
@@ -944,21 +1042,48 @@ footer p {
   }
 }
 
-@media (min-width: 900px) {
+@media only screen and (min-width: 800px) and (orientation: landscape) {
   #landing h1 {
-    font-size: 55px;
+    font-size: 30px;
   }
 
   #landing h2 {
-    font-size: 50px;
-  }
-
-  #me {
-    height: 80vh;
+    top: 60%;
+    font-size: 22px;
   }
 
   #abilites {
+    height: 200vh;
+  }
+
+  #me .social2 a {
+    font-size: 20px;
+  }
+
+  #projects {
+    height: 340vh;
+  }
+
+  #learning .features2 .feature {
+    flex-basis: 40%;
+  }
+}
+
+@media (min-width: 900px) {
+  #landing h1 {
+    font-size: 45px;
+  }
+
+  #landing h2 {
+    font-size: 30px;
+  }
+
+  #me {
     height: 110vh;
+  }
+
+  #abilites {
+    height: 130vh;
   }
 
   #abilites .features {
@@ -979,7 +1104,7 @@ footer p {
   }
 
   #learning {
-    height: 70vh;
+    height: 120vh;
   }
 
   #learning .features2 {
@@ -987,15 +1112,19 @@ footer p {
   }
 
   #learning .feature {
-    flex-basis: 33%;
+    flex-basis: 50%;
   }
 
   #learning .features2 img {
-    flex-basis: 33%;
+    flex-basis: 50%;
   }
 
   #learning .features2 h2 {
     flex-basis: 33%;
+  }
+
+  #projects {
+    height: 250vh;
   }
 
   #projects .proj {
@@ -1004,10 +1133,30 @@ footer p {
   }
 }
 
+@media (min-width: 900px) {
+  #me {
+    height: 80vh;
+  }
+
+  #learning {
+    height: 80vh;
+  }
+
+  #projects {
+    height: 150vh
+  }
+}
+
+@media only screen and (min-width: 800px) and (orientation: landscape) {
+  #me .img p {
+    font-size: 22px;
+  }
+}
+
 @media (min-width: 1200px) {
   #landing h2 {
     top: 60%;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   header {
@@ -1021,13 +1170,15 @@ footer p {
   }
 
   #me .img p {
-    font-size: 20px;
+    font-size: 30px;
   }
+
   #me .img img {
-    height: 25vh;
-    width: 12%;
+    height: 30vh;
+    width: 20%;
   }
-  .social2 a i {
+
+  .social2 a {
     font-size: 40px;
   }
 
@@ -1036,18 +1187,26 @@ footer p {
     width: 80%;
     margin: auto;
   }
+
   #abilites h1 {
     font-size: 30px;
   }
+
+
+
   #abilites .features .feature {
     flex-basis: 33%;
   }
+
   #abilites .features .feature img {
     flex-basis: 33%;
   }
+
   #abilites .features .feature h2 {
     flex-basis: 33%;
+    font-size: 25px;
   }
+
   #arrow-down {
     display: block;
   }
@@ -1069,6 +1228,10 @@ footer p {
     flex-basis: 25%;
   }
 
+  #learning .features2 .feature h2 {
+    font-size: 25px;
+  }
+
   #projects {
     height: 260vh;
     width: 80%;
@@ -1080,7 +1243,7 @@ footer p {
   }
 
   .projinfo p {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .projinfo a {
@@ -1089,7 +1252,21 @@ footer p {
   }
 }
 
+@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+  #learning {
+    height: 100vh;
+  }
+
+  #projects {
+    height: 150vh;
+  }
+}
+
 @media (min-width: 1600px) {
+  #landing h2 {
+    top: 55%;
+  }
+
   #me {
     width: 70%;
     margin: auto;
@@ -1105,6 +1282,7 @@ footer p {
     height: 80vh;
     margin: auto;
   }
+
   #abilites .features {
     width: 91%;
     flex-basis: 100%;
@@ -1113,7 +1291,15 @@ footer p {
   #learning {
     width: 70%;
     margin: auto;
-    height: 70vh;
+    height: 100vh;
+  }
+
+  #learning .features2 .feature {
+    flex-basis: 40%;
+  }
+
+  #learning .features2 .feature h2 {
+    flex-basis: 60%;
   }
 
   #projects {
@@ -1122,6 +1308,11 @@ footer p {
     height: 140vh;
   }
 }
+
+
+
+
+
 @media (max-width: 786px) {
   nav ul {
     max-height: 0px;
