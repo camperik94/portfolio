@@ -284,6 +284,7 @@ footer p {
 }
 
 #abilites h1 {
+  font-family: Montserrat;
   border-bottom: 2px solid black;
   padding: 20px 150px;
   margin-bottom: 100px;
@@ -299,7 +300,7 @@ footer p {
 }
 
 .features h1 {
-  font-family: "Saira Condensed", sans-serif;
+  font-family: Montserrat;
   font-size: 26px;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -405,6 +406,10 @@ footer p {
   height: 50vh;
 
   /* padding: 200px 20px; */
+}
+
+#me h1 {
+  font-family: Montserrat;
 }
 
 .tittle h1 {
@@ -1149,9 +1154,13 @@ footer p {
   }
 
   #me {
-    height: 100vh;
+    height: 110vh;
     width: 70%;
     margin: auto;
+  }
+
+  #me h1 {
+    font-size: 50px;
   }
 
   #me .img p {
@@ -1165,6 +1174,7 @@ footer p {
 
   .social2 a {
     font-size: 40px;
+
   }
 
   #abilites {
@@ -1174,7 +1184,7 @@ footer p {
   }
 
   #abilites h1 {
-    font-size: 30px;
+    font-size: 50px;
   }
 
 
@@ -1184,7 +1194,7 @@ footer p {
   }
 
   #abilites .features .feature img {
-    flex-basis: 33%;
+    flex-basis: 50%;
   }
 
   #abilites .features .feature h2 {
@@ -1204,16 +1214,17 @@ footer p {
   }
 
   #learning .features2 {
-    width: 91%;
-    margin: auto;
-    flex-basis: 50%;
+    flex-basis: 100%;
   }
 
-  .features2 .feature {
-    flex-basis: 25%;
+
+
+  #learning .features2 .feature img {
+    flex-basis: 51%;
   }
 
   #learning .features2 .feature h2 {
+    flex-basis: 100%;
     font-size: 25px;
   }
 
@@ -1255,7 +1266,7 @@ footer p {
   #me {
     width: 70%;
     margin: auto;
-    height: 70vh;
+    height: 100vh;
   }
 
   .social2 a i {
@@ -1279,12 +1290,18 @@ footer p {
     height: 100vh;
   }
 
-  #learning .features2 .feature {
-    flex-basis: 40%;
+  #learning .features2 {
+    flex-basis: 100%;
+  }
+
+
+
+  #learning .features2 .feature img {
+    flex-basis: 51%;
   }
 
   #learning .features2 .feature h2 {
-    flex-basis: 60%;
+    flex-basis: 100%;
   }
 
   #projects {
