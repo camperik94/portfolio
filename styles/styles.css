@@ -218,7 +218,8 @@ p strong {
 
 .proj img {
   width: 40%;
-  align-self: flex-start;
+  /* height: 100%; */
+  align-self: center;
 }
 
 /* Contacts section */
@@ -977,11 +978,7 @@ footer p {
   }
 }
 
-@media only screen and (min-width: 640px) and (orientation: landscape) {
-  #projects {
-    height: 350vh;
-  }
-}
+
 
 @media (min-width: 768px) {
   #landing h1 {
@@ -1333,7 +1330,7 @@ footer p {
   nav ul li {
     box-sizing: border-box;
     width: 100%;
-    padding: 7px;
+    padding: 0;
   }
 
   .menu-icon {
