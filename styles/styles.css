@@ -590,7 +590,7 @@ footer p {
     padding: 0;
     width: 100%;
     height: 568px;
-    height: 360vh;
+    height: 560vh;
     margin-top: 50px;
   }
 
@@ -668,7 +668,7 @@ footer p {
   #projects {
     margin-top: 20px;
     padding: 0;
-    height: 280vh;
+    height: 410vh;
   }
 
   #projects h1 {
@@ -740,7 +740,7 @@ footer p {
   #projects {
     margin-top: 0;
     padding: 0;
-    height: 260vh;
+    height: 400vh;
   }
 
   #projects h1 {
@@ -821,7 +821,7 @@ footer p {
   }
 
   #projects {
-    height: 550vh;
+    height: 750vh;
   }
 }
 
@@ -876,7 +876,7 @@ footer p {
   }
 
   #projects {
-    height: 160vh;
+    height: 260vh;
   }
 
   .contact-data p {
@@ -972,7 +972,7 @@ footer p {
 
   #projects {
 
-    height: 480vh;
+    height: 680vh;
     width: 90%;
     margin: auto;
   }
@@ -1035,7 +1035,7 @@ footer p {
   }
 
   #projects {
-    height: 130vh;
+    height: 200vh;
   }
 }
 
@@ -1058,7 +1058,7 @@ footer p {
   }
 
   #projects {
-    height: 340vh;
+    height: 580vh;
   }
 
   #learning .features2 .feature {
@@ -1121,7 +1121,7 @@ footer p {
   }
 
   #projects {
-    height: 250vh;
+    height: 350vh;
   }
 
   #projects .proj {
@@ -1130,19 +1130,7 @@ footer p {
   }
 }
 
-@media (min-width: 900px) {
-  #me {
-    height: 80vh;
-  }
 
-  #learning {
-    height: 80vh;
-  }
-
-  #projects {
-    height: 150vh
-  }
-}
 
 @media only screen and (min-width: 800px) and (orientation: landscape) {
   #me .img p {
@@ -1230,7 +1218,7 @@ footer p {
   }
 
   #projects {
-    height: 260vh;
+    height: 290vh;
     width: 80%;
     margin: auto;
   }
@@ -1249,15 +1237,15 @@ footer p {
   }
 }
 
-@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+/* @media (min-width: 1366px) and (min-height: 1024px) {
   #learning {
     height: 100vh;
   }
 
   #projects {
-    height: 150vh;
-  }
-}
+    height: 540vh;
+  } */
+
 
 @media (min-width: 1600px) {
   #landing h2 {
@@ -1302,7 +1290,7 @@ footer p {
   #projects {
     width: 70%;
     margin: auto;
-    height: 140vh;
+    height: 240vh;
   }
 }
 
